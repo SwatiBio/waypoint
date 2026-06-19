@@ -420,13 +420,21 @@ textarea { resize: vertical; min-height: 80px; }
 .generated-item .gen-actions { display: flex; gap: 8px; }
 
 /* === Settings === */
-.settings-container { max-width: 600px; margin: 0 auto; }
+.settings-container { max-width: 900px; margin: 0 auto; }
 .settings-section {
   background: var(--card-bg); border: 1px solid var(--border-color);
   border-radius: var(--radius-lg); padding: 20px; margin-bottom: 16px;
 }
 .settings-section h3 { font-size: 15px; font-weight: 600; margin-bottom: 16px; }
-.settings-section .form-group { margin-bottom: 16px; }
+.settings-section .form-group { margin-bottom: 0; }
+.settings-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 16px;
+}
+.settings-grid .full-width {
+  grid-column: 1 / -1;
+}
 
 /* === Notes Preview === */
 .notes-preview { margin-top: 8px; padding: 12px; background: rgba(255,255,255,0.06); border-radius: var(--radius-sm); font-size: 13px; display: none; }
@@ -451,6 +459,7 @@ textarea { resize: vertical; min-height: 80px; }
   .kanban-column { max-width: 100%; }
   .form-row { flex-direction: column; }
   .advanced-search { grid-template-columns: 1fr; }
+  .settings-grid { grid-template-columns: 1fr; }
 }
 
 /* === Utility === */
