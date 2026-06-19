@@ -374,7 +374,7 @@ textarea { resize: vertical; min-height: 80px; }
 .form-row .form-group { flex: 1; }
 .form-group { margin-bottom: 12px; }
 .form-group label { display: block; font-size: 12px; font-weight: 500; color: var(--text-secondary); margin-bottom: 4px; }
-.form-group label:has(input[type="checkbox"]) { display: inline-flex; align-items: center; gap: 6px; }
+.form-group label:has(input[type="checkbox"]) { display: inline-flex; align-items: center; gap: 6px; flex-wrap: nowrap; white-space: nowrap; }
 
 /* === Detail View in Modal === */
 .detail-field { margin-bottom: 16px; }
@@ -430,7 +430,7 @@ textarea { resize: vertical; min-height: 80px; }
   background: var(--card-bg); border: 1px solid var(--border-color);
   border-radius: var(--radius-lg); padding: 20px; margin-bottom: 16px;
 }
-.settings-section h3 { font-size: 15px; font-weight: 600; margin-bottom: 16px; }
+.settings-section h3 { font-size: 15px; font-weight: 600; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
 .settings-section .form-group { margin-bottom: 0; }
 .settings-grid {
   display: grid;
