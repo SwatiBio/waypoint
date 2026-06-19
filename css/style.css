@@ -334,6 +334,7 @@ textarea { resize: vertical; min-height: 80px; }
 .modal-close { font-size: 22px; color: var(--text-muted); padding: 0 4px; }
 .modal-close:hover { color: var(--text-primary); }
 .modal-body { padding: 20px; overflow-y: auto; flex: 1; }
+.modal-footer .modal-close.btn { padding: 6px 14px; font-size: 13px; }
 .modal-footer {
   display: flex; justify-content: flex-end; gap: 8px;
   padding: 12px 20px; border-top: 1px solid var(--border-color);

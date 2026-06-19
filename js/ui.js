@@ -146,8 +146,10 @@ const UI = {
   },
 
   initExportImport() {
-    document.getElementById('export-btn').addEventListener('click', Export.exportData);
-    document.getElementById('import-btn').addEventListener('click', () => {
+    const expBtn = document.getElementById('export-btn');
+    const impBtn = document.getElementById('import-btn');
+    if (expBtn) expBtn.addEventListener('click', Export.exportData);
+    if (impBtn) impBtn.addEventListener('click', () => {
       document.getElementById('import-file').click();
     });
     document.getElementById('import-file').addEventListener('change', Export.importData);
