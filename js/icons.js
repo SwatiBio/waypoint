@@ -3,8 +3,8 @@ const ICON_PATHS = {
   // Views & Nav
   dashboard: '<rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>',
   kanban: '<rect x="4" y="3" width="16" height="18" rx="2"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="12" y2="17"/>',
-  table: '<rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="8" x2="16" y2="8"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="16" x2="12" y2="16"/>',
-  timeline: '<rect x="3" y="4" width="18" height="18" rx="2"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>',
+  table: '<rect x="4" y="3" width="16" height="18" rx="2"/><line x1="8" y1="8" x2="16" y2="8"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="16" x2="12" y2="16"/>',
+  timeline: '<rect x="3" y="3" width="18" height="18" rx="2"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="16" y1="3" x2="16" y2="7"/><line x1="3" y1="10" x2="21" y2="10"/>',
   menu: '<line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/>',
   plus: '<line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>',
   close: '<line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>',
@@ -80,11 +80,11 @@ function icon(name, size) {
   if (size === undefined) size = 20;
   const p = ICON_PATHS[name];
   if (!p) return '';
-  const acc = '#B0D9D5';
+  const acc = '#5E81AC'; // nord10
   const sw = 1.5;
-  return `<span style="display:inline-flex;position:relative;width:${size}px;height:${size}px;vertical-align:middle;flex-shrink:0">
+  return `<span style="display:inline-flex;position:relative;width:${size}px;height:${size}px;line-height:0;flex-shrink:0">
     <svg viewBox="0 0 24 24" width="${size}" height="${size}" stroke="${acc}" stroke-width="${sw}" stroke-linecap="round" stroke-linejoin="round" fill="none" style="position:absolute;top:1.5px;left:-1.5px;opacity:0.5">${p}</svg>
-    <svg viewBox="0 0 24 24" width="${size}" height="${size}" stroke="currentColor" stroke-width="${sw}" stroke-linecap="round" stroke-linejoin="round" fill="none" style="position:absolute">${p}</svg>
+    <svg viewBox="0 0 24 24" width="${size}" height="${size}" stroke="currentColor" stroke-width="${sw}" stroke-linecap="round" stroke-linejoin="round" fill="none" style="position:absolute;top:0;left:0">${p}</svg>
   </span>`;
 }
 

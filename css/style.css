@@ -1,29 +1,35 @@
-/* === CSS Variables / Design Tokens === */
+/* === Nord Theme — CSS Variables / Design Tokens === */
+/* https://www.nordtheme.com/ */
+/* Polar Night: #2E3440 #3B4252 #434C5E #4C566A */
+/* Snow Storm:  #D8DEE9 #E5E9F0 #ECEFF4 */
+/* Frost:       #8FBCBB #88C0D0 #81A1C1 #5E81AC */
+/* Aurora:      #BF616A #D08770 #EBCB8B #A3BE8C #B48EAD */
+
 :root {
-  --bg-primary: #B0D9D5;
-  --bg-secondary: #a3ceca;
-  --bg-tertiary: #c3e2df;
-  --bg-hover: rgba(33,191,175,0.12);
-  --bg-active: #21BFAF;
-  --sidebar-bg: #8FC4BF;
-  --sidebar-hover: rgba(33,191,175,0.15);
-  --sidebar-active: #21BFAF;
-  --card-bg: #F2F0EB;
-  --modal-overlay: rgba(0,0,0,0.4);
-  --text-primary: #0D0D0D;
-  --text-secondary: rgba(13,13,13,0.65);
-  --text-muted: rgba(13,13,13,0.45);
-  --border-color: rgba(33,191,175,0.35);
-  --border-light: rgba(33,191,175,0.18);
-  --accent: #21BFAF;
-  --accent-hover: #1a998e;
-  --accent-light: rgba(33,191,175,0.12);
-  --success: #10b981;
-  --warning: #f59e0b;
-  --danger: #D96F66;
-  --shadow-sm: 0 1px 2px rgba(0,0,0,0.08);
-  --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
-  --shadow-lg: 0 8px 24px rgba(0,0,0,0.14);
+  --bg-primary: #ECEFF4;      /* nord6 */
+  --bg-secondary: #E5E9F0;    /* nord5 */
+  --bg-tertiary: #D8DEE9;     /* nord4 */
+  --bg-hover: rgba(94,129,172,0.10);
+  --bg-active: #5E81AC;
+  --sidebar-bg: #D8DEE9;
+  --sidebar-hover: rgba(94,129,172,0.14);
+  --sidebar-active: #5E81AC;
+  --card-bg: #FFFFFF;
+  --modal-overlay: rgba(46,52,64,0.30);
+  --text-primary: #2E3440;
+  --text-secondary: #4C566A;
+  --text-muted: #81A1C1;
+  --border-color: rgba(76,86,106,0.22);
+  --border-light: rgba(76,86,106,0.10);
+  --accent: #5E81AC;
+  --accent-hover: #81A1C1;
+  --accent-light: rgba(94,129,172,0.10);
+  --success: #A3BE8C;
+  --warning: #EBCB8B;
+  --danger: #BF616A;
+  --shadow-sm: 0 1px 2px rgba(46,52,64,0.06);
+  --shadow-md: 0 4px 12px rgba(46,52,64,0.08);
+  --shadow-lg: 0 8px 24px rgba(46,52,64,0.12);
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 12px;
@@ -33,24 +39,27 @@
 }
 
 [data-theme="dark"] {
-  --bg-primary: #1a3d3a;
-  --bg-secondary: #15302e;
-  --bg-tertiary: #224946;
-  --bg-hover: rgba(33,191,175,0.15);
-  --bg-active: #21BFAF;
-  --sidebar-bg: #0f2422;
-  --sidebar-hover: rgba(33,191,175,0.2);
-  --sidebar-active: #21BFAF;
-  --card-bg: #24413e;
+  --bg-primary: #2E3440;
+  --bg-secondary: #3B4252;
+  --bg-tertiary: #434C5E;
+  --bg-hover: rgba(136,192,208,0.12);
+  --bg-active: #88C0D0;
+  --sidebar-bg: #2E3440;
+  --sidebar-hover: rgba(136,192,208,0.18);
+  --sidebar-active: #88C0D0;
+  --card-bg: #3B4252;
   --modal-overlay: rgba(0,0,0,0.65);
-  --text-primary: #F2F0EB;
-  --text-secondary: rgba(242,240,235,0.7);
-  --text-muted: rgba(242,240,235,0.5);
-  --border-color: rgba(33,191,175,0.3);
-  --border-light: rgba(33,191,175,0.15);
-  --accent: #21BFAF;
-  --accent-hover: #3ecfc2;
-  --accent-light: rgba(33,191,175,0.15);
+  --text-primary: #ECEFF4;
+  --text-secondary: #D8DEE9;
+  --text-muted: #81A1C1;
+  --border-color: rgba(67,76,94,0.8);
+  --border-light: rgba(76,86,106,0.35);
+  --accent: #88C0D0;
+  --accent-hover: #8FBCBB;
+  --accent-light: rgba(136,192,208,0.15);
+  --success: #A3BE8C;
+  --warning: #EBCB8B;
+  --danger: #BF616A;
   --shadow-sm: 0 1px 2px rgba(0,0,0,0.25);
   --shadow-md: 0 4px 12px rgba(0,0,0,0.35);
   --shadow-lg: 0 8px 24px rgba(0,0,0,0.45);
@@ -174,7 +183,7 @@ textarea { resize: vertical; min-height: 80px; }
   border-radius: var(--radius-sm); font-size: 13px; font-weight: 500;
   transition: background var(--transition), opacity var(--transition);
 }
-.btn-primary { background: var(--accent); color: #fff; }
+.btn-primary { background: var(--accent); color: #2E3440; }
 .btn-primary:hover { background: var(--accent-hover); }
 .btn-secondary { background: rgba(255,255,255,0.08); color: var(--text-primary); }
 .btn-secondary:hover { background: rgba(255,255,255,0.14); }
@@ -185,7 +194,7 @@ textarea { resize: vertical; min-height: 80px; }
 /* === FAB === */
 .fab {
   position: fixed; bottom: 24px; right: 24px; width: 48px; height: 48px;
-  border-radius: 50%; background: var(--accent); color: #fff;
+  border-radius: 50%; background: var(--accent); color: #2E3440;
   font-size: 24px; display: flex; align-items: center; justify-content: center;
   box-shadow: var(--shadow-lg); z-index: 100;
   transition: transform var(--transition), background var(--transition);
@@ -248,20 +257,20 @@ textarea { resize: vertical; min-height: 80px; }
   display: inline-block; padding: 2px 8px; border-radius: 10px;
   font-size: 11px; font-weight: 500;
 }
-.status-Applied { background: #2a1a45; color: #a78bfa; }
-.status-Phone\ Screen { background: #1a2a45; color: #93c5fd; }
-.status-Technical { background: #45301a; color: #fcd34d; }
-.status-Final { background: #451a2a; color: #f9a8d4; }
-.status-Offer { background: #1a4530; color: #6ee7b7; }
-.status-Rejected { background: #45201a; color: #fca5a5; }
-.status-Withdrawn { background: #2a2a2e; color: #9ca3af; }
-[data-theme="dark"] .status-Applied { background: #1a1030; color: #8b6ff0; }
-[data-theme="dark"] .status-Phone\ Screen { background: #101e30; color: #7fb8f0; }
-[data-theme="dark"] .status-Technical { background: #302010; color: #e8b830; }
-[data-theme="dark"] .status-Final { background: #30101e; color: #e890c0; }
-[data-theme="dark"] .status-Offer { background: #103020; color: #50d090; }
-[data-theme="dark"] .status-Rejected { background: #301010; color: #e08080; }
-[data-theme="dark"] .status-Withdrawn { background: #1a1a1e; color: #808080; }
+.status-Applied { background: rgba(94,129,172,0.18); color: #5E81AC; }
+.status-Phone\ Screen { background: rgba(136,192,208,0.18); color: #5E81AC; }
+.status-Technical { background: rgba(208,135,112,0.18); color: #D08770; }
+.status-Final { background: rgba(180,142,173,0.18); color: #B48EAD; }
+.status-Offer { background: rgba(163,190,140,0.18); color: #6A8F5C; }
+.status-Rejected { background: rgba(191,97,106,0.18); color: #BF616A; }
+.status-Withdrawn { background: rgba(76,86,106,0.18); color: #4C566A; }
+[data-theme="dark"] .status-Applied { background: rgba(94,129,172,0.22); color: #88C0D0; }
+[data-theme="dark"] .status-Phone\ Screen { background: rgba(136,192,208,0.18); color: #8FBCBB; }
+[data-theme="dark"] .status-Technical { background: rgba(208,135,112,0.22); color: #D08770; }
+[data-theme="dark"] .status-Final { background: rgba(180,142,173,0.22); color: #B48EAD; }
+[data-theme="dark"] .status-Offer { background: rgba(163,190,140,0.22); color: #A3BE8C; }
+[data-theme="dark"] .status-Rejected { background: rgba(191,97,106,0.22); color: #BF616A; }
+[data-theme="dark"] .status-Withdrawn { background: rgba(76,86,106,0.22); color: #81A1C1; }
 .table-controls { margin-bottom: 16px; }
 .table-filters { display: flex; gap: 8px; flex-wrap: wrap; }
 
